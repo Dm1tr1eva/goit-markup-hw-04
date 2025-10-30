@@ -238,7 +238,7 @@ p {
 .hero {
   padding: 188px 0;
   background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url('../images/people-office.jpg');
+    url("../images/people-office.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -363,12 +363,14 @@ p {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio__item:hover {
+.portfolio__item:hover,
+.portfolio__item:focus {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
-.portfolio__item:hover .portfolio-info__text {
+.portfolio__item:hover .portfolio-info__text,
+.portfolio__item:focus .portfolio-info__text {
   transform: translateY(0);
 }
 
@@ -388,6 +390,8 @@ p {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px 32px;
   color: #f4f4fd;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .portfolio__description {
