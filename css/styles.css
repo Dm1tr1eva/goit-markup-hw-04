@@ -108,7 +108,7 @@ p {
 .team__list__icon,
 .media__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 24px;
 }
 
@@ -126,14 +126,17 @@ p {
 
 .team__icon,
 .media__icon {
-  fill: #F4F4FD;
+  fill: #f4f4fd;
 }
 
 /* #endregion global values */
 
 /* #region header */
 .header {
+  background-color: #fff;
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header .container {
@@ -295,10 +298,13 @@ p {
 }
 
 .benefits__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #f4f4fd;
   border: 1px solid #8e8f99;
+  height: 112px;
   border-radius: 4px;
-  padding: 24px 100px;
   margin-bottom: 8px;
 }
 
@@ -326,7 +332,7 @@ p {
 }
 
 .team__description {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 .team__subtitle,
@@ -362,7 +368,7 @@ p {
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
-.portfolio__item:hover .portfolio__info {
+.portfolio__item:hover .portfolio-info__text {
   transform: translateY(0);
 }
 
@@ -371,7 +377,7 @@ p {
   overflow: hidden;
 }
 
-.portfolio__info {
+.portfolio-info__text {
   position: absolute;
   top: 0;
   left: 0;
@@ -380,11 +386,8 @@ p {
   height: 100%;
   background-color: #4d5ae5;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 40px 32px 164px;
-}
-
-.portfolio-info__text{
-color: #f4f4fd;
+  padding: 40px 32px;
+  color: #f4f4fd;
 }
 
 .portfolio__description {
@@ -423,16 +426,20 @@ color: #f4f4fd;
   color: #f4f4fd;
 }
 
-.footer .container{
+.footer .container {
   display: flex;
-  gap: 120px;
+  align-items: baseline;
 }
 
-.media__list{
+.container__info {
+  margin-right: 120px;
+}
+
+.media__list {
   gap: 16px;
 }
 
-.media__text{
+.media__text {
   font-weight: 500;
   color: #fff;
   margin-bottom: 16px;
@@ -440,6 +447,6 @@ color: #f4f4fd;
 
 .media__link__icon:hover,
 .media__link__icon:focus {
-  background-color: #31D0AA;
+  background-color: #31d0aa;
 }
 /* #endregion footer */
